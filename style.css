@@ -1,3 +1,20 @@
+* {
+  font-family: "Raleway", sans-serif;
+  text-transform: none;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoHeader {
+  display: flex;
+  justify-content: start;
+}
+
 .fa-star {
   color: darkgray;
 }
