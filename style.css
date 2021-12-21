@@ -4,15 +4,26 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .logoHeader {
   display: flex;
-  justify-content: start;
+  justify-self: start;
+  width: 150px;
+}
+
+.headerNavLink {
+  padding: 40px;
 }
 
 .fa-star {
