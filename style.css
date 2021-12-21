@@ -1,0 +1,7 @@
+.fa-star {
+  color: darkgray;
+}
+
+.fas[star-color="true"] {
+  color: #0065fc;
+}
