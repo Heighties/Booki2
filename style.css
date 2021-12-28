@@ -4,6 +4,18 @@
   list-style: none;
 }
 
+:root {
+  --blue: #0065fc;
+}
+
+:root {
+  --lightblue: #deebff;
+}
+
+:root {
+  --gray: #f2f2f2;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -13,7 +25,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
 }
 
 .logoHeader {
@@ -23,7 +35,126 @@ a {
 }
 
 .headerNavLink {
+  position: relative;
   padding: 40px;
+}
+
+.headerNavLink:hover:before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  background-color: var(--blue);
+  left: 0;
+  right: 0;
+  height: 2px;
+  top: 0;
+}
+
+.headerNavLink:hover {
+  color: var(--blue);
+}
+
+section {
+  display: block;
+}
+
+.searchFormWrapIcon {
+  background-color: var(--gray);
+  padding: 16px 20px;
+  border-radius: 16px 0 0 16px;
+  text-align: center;
+}
+
+.search form input {
+  border-right: none;
+  border-left: none;
+  border-top: var(--gray) 1px solid;
+  border-bottom: var(--gray) 1px solid;
+  padding: 0 24px;
+  width: 224px;
+  height: 49px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+
+.search form button {
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 16px 16px 0;
+  font-family: "Raleway", "Sans serif";
+  font-size: 32px;
+  cursor: pointer;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.searchFilters {
+  display: flex;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.searchFilters h2 {
+  margin: 0 32px 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.searchFilters i {
+  background-color: var(--lightblue);
+  border-radius: 100%;
+  height: 48px;
+  width: 48px;
+  min-height: 56px;
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+  color: var(--blue);
+  margin-right: 16px;
+}
+
+.searchFilters div {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+  border: 2px solid #d9d9d9;
+  border-radius: 32px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  padding-right: 16px;
+}
+
+.searchInfo {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 32px 0;
+}
+
+.searchInfoWrapIcon {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  color: var(--blue);
+}
+
+.hostingMain,
+.hostingPopular {
+  background-color: var(--gray);
+  border-radius: 24px;
+  padding: 32px;
 }
 
 .fa-star {
@@ -31,5 +162,5 @@ a {
 }
 
 .fas[star-color="true"] {
-  color: #0065fc;
+  color: var(--blue);
 }
