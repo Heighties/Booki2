@@ -150,6 +150,10 @@ html > * {
   --gray: #f2f2f2;
 }
 
+div {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -160,6 +164,9 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 5px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 0.9rem;
 }
 
 .logoHeader {
@@ -188,23 +195,31 @@ a {
   color: var(--blue);
 }
 
+header h1 {
+  font-weight: bold;
+}
+
 section {
   display: block;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .searchFormWrapIcon {
   background-color: var(--gray);
-  padding: 16px 20px;
+  width: 40px;
   border-radius: 16px 0 0 16px;
   text-align: center;
 }
+/************************/
 
-.search_form {
-  border: var(--gray) 1px solid;
+element.style {
+  display: flex;
 }
 
+/**********************/
 .search_form > * {
-  line-height: 200px;
+  line-height: 40px;
   display: inline-block;
 }
 
@@ -215,10 +230,10 @@ section {
   border-bottom: var(--gray) 1px solid;
   padding: 0 24px;
   width: 224px;
-  height: 232px;
   font-size: 16px;
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
+  line-height: 40px;
 }
 
 .search form button {
@@ -228,7 +243,7 @@ section {
   border: none;
   border-radius: 0 16px 16px 0;
   font-family: "Raleway", "Sans serif";
-  font-size: 32px;
+  font-size: 16px;
   cursor: pointer;
   padding-left: 24px;
   padding-right: 24px;
@@ -244,6 +259,7 @@ section {
   margin: 0 32px 16px 0;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .searchFilters i {
@@ -293,11 +309,131 @@ section {
   color: var(--blue);
 }
 
+/************************************************/
+/************************************************/
+
+.hosting {
+  display: flex;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+  flex-wrap: wrap;
+}
+
 .hostingMain,
 .hostingPopular {
   background-color: var(--gray);
   border-radius: 24px;
   padding: 32px;
+}
+
+.hostingMain {
+  width: 60%;
+}
+
+.hostingMain header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hostingMain h2,
+.hostingPopular h2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.hostingMainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+.hostingMain article,
+.hostingPopular article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 50%;
+}
+
+.hostingMainViewMore {
+  font-weight: bold;
+}
+
+.hostingPopular {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hostingMain article,
+.hostingPopular article {
+  display: flex;
+}
+
+.hostingMain figure {
+  display: flex;
+  height: 7rem;
+}
+
+.hostingMainCard {
+  width: 15rem;
+}
+
+.hostingMain img {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hostingPopular figure {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+}
+
+.hostingPopular img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.hostingMain h3,
+.hostingPopular h3 {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+
+.hostingMain p,
+.hostingPopular p {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.hostingMain ul,
+.hostingPopular ul {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
 }
 
 .fa-star {
@@ -306,4 +442,69 @@ section {
 
 .fas[star-color="true"] {
   color: var(--blue);
+}
+
+.cardPopular {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*********************************ACTIVITY*************************************/
+
+.activity h2,
+h3 {
+  font-weight: bold;
+}
+
+.activityContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.activityWrapimg {
+  width: 20rem;
+}
+
+.activity img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.activity a {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/************************************FOOTER**************************************/
+
+.footer {
+  background-color: var(--gray);
+  width: 100%;
+}
+
+.footerWrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.footerWrapperColumn {
+  padding: 2rem 2rem;
+}
+
+.footer ul {
+  display: block;
+}
+
+.footer ul li {
+  margin: 1rem 0;
+  cursor: pointer;
 }
