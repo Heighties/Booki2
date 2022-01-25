@@ -135,10 +135,10 @@ table {
 
 html > * {
   border: none;
+  font-family: "Raleway", sans-serif;
 }
 
 * {
-  font-family: "Raleway", sans-serif;
   text-transform: none;
   list-style: none;
   outline: none;
@@ -148,6 +148,11 @@ html > * {
   --blue: #0065fc;
   --lightblue: #deebff;
   --gray: #f2f2f2;
+  --verylightblue: #f1faff;
+}
+
+div {
+  display: block;
 }
 
 a {
@@ -155,17 +160,26 @@ a {
   color: black;
 }
 
+h3 {
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 992px;
+  margin: auto;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  padding-top: 1.5rem;
 }
 
 .logoHeader {
   display: flex;
   justify-self: start;
-  width: 150px;
+  width: 110px;
 }
 
 .headerNavLink {
@@ -188,23 +202,46 @@ a {
   color: var(--blue);
 }
 
+.search h1 {
+  font-weight: bold;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
+.search p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
 section {
   display: block;
+  flex-wrap: wrap;
+}
+
+.search {
+  padding-top: 30px;
 }
 
 .searchFormWrapIcon {
   background-color: var(--gray);
-  padding: 16px 20px;
+  width: 40px;
   border-radius: 16px 0 0 16px;
   text-align: center;
 }
+/************************/
 
-.search_form {
-  border: var(--gray) 1px solid;
+element.style {
+  display: flex;
 }
 
+.main {
+  margin: auto;
+  max-width: 100%;
+}
+
+/**********************/
 .search_form > * {
-  line-height: 200px;
+  line-height: 40px;
   display: inline-block;
 }
 
@@ -215,10 +252,10 @@ section {
   border-bottom: var(--gray) 1px solid;
   padding: 0 24px;
   width: 224px;
-  height: 232px;
   font-size: 16px;
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
+  line-height: 40px;
 }
 
 .search form button {
@@ -228,7 +265,7 @@ section {
   border: none;
   border-radius: 0 16px 16px 0;
   font-family: "Raleway", "Sans serif";
-  font-size: 32px;
+  font-size: 16px;
   cursor: pointer;
   padding-left: 24px;
   padding-right: 24px;
@@ -244,6 +281,7 @@ section {
   margin: 0 32px 16px 0;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .searchFilters i {
@@ -271,6 +309,12 @@ section {
   cursor: pointer;
   font-weight: bold;
   padding-right: 16px;
+  height: 50px;
+}
+
+.searchFilters div:hover {
+  background-color: var(--verylightblue);
+  transform: scale(1.02);
 }
 
 .searchInfo {
@@ -293,11 +337,173 @@ section {
   color: var(--blue);
 }
 
+/************************************************/
+/************************************************/
+
+.hosting {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  flex-direction: row;
+  gap: 26px;
+}
+
 .hostingMain,
 .hostingPopular {
   background-color: var(--gray);
   border-radius: 24px;
   padding: 32px;
+}
+
+.hostingMain {
+  justify-content: center;
+  width: 570px;
+}
+
+.hostingMain header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hostingMain h2,
+.hostingPopular h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-size: 15px;
+}
+
+.hostingMainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 1rem;
+}
+
+.hostingMain article,
+.hostingPopular article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 3px;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.hostingMain p,
+ul {
+  padding: 2px;
+}
+
+.hostingMainViewMore {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.hostingPopular {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.hostingPopular h2 {
+  display: flex;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+.hostingMain figure {
+  display: flex;
+  height: 50%;
+}
+
+.hostingMainCard {
+  width: 100%;
+}
+
+.hostingMain article {
+  width: 176px;
+  height: 145px;
+}
+
+.hostingPopular article {
+  width: 255px;
+  height: 98px;
+}
+
+article:hover {
+  transform: scale(1.02);
+}
+
+.hostingMain img {
+  height: 100px;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hostingPopular figure {
+  display: flex;
+  height: 100%;
+  width: 90px;
+}
+
+.hostingPopular img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.hostingPopularWrap {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  max-width: 55%;
+}
+
+.hostingMain h3,
+.hostingPopular h3 {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+  word-wrap: break-word;
+  white-space: pre-line;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+
+.hostingMain p,
+.hostingPopular p {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  font-size: 10px;
+}
+
+.hostingMain ul,
+.hostingPopular ul {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.hostingPopularWrap p {
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  margin-top: auto !important;
+  font-size: 10px;
 }
 
 .fa-star {
@@ -306,4 +512,361 @@ section {
 
 .fas[star-color="true"] {
   color: var(--blue);
+}
+
+.cardPopular {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/*********************************ACTIVITY*************************************/
+
+.activity {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.activityTitle {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.activityContainer {
+  display: flex;
+  gap: 33px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.activityWrapimg {
+  width: 14rem;
+}
+
+.activity h3 {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.activity img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.activity a {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.activityContainer {
+  display: flex;
+  gap: 33px;
+}
+
+.activityCard1,
+.activityCard4 {
+  height: 337px;
+}
+
+.activityCard1 img,
+.activityCard4 img {
+  height: 300px;
+}
+
+.activityContainerCard23 {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.activityCard2 {
+  height: 180px;
+}
+
+.activityCard2 img {
+  height: 143px;
+}
+
+.activityCard3 {
+  height: 127px;
+}
+
+.activityCard3 img {
+  height: 90px;
+}
+
+.activityContainerCard56 {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.activityCard5 {
+  height: 148px;
+}
+
+.activityCard5 img {
+  height: 111px;
+}
+
+.activityCard6 {
+  height: 158px;
+}
+
+.activityCard6 img {
+  height: 121px;
+}
+
+.activityCard:hover {
+  transform: scale(1.02);
+}
+/************************************FOOTER**************************************/
+
+.footer {
+  background-color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.footerWrapper {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  gap: 130px;
+  padding-left: 430px;
+  flex-wrap: wrap;
+}
+
+.footerWrapperColumn {
+  padding: 2rem 2rem;
+}
+
+.footer ul {
+  display: block;
+}
+
+.footer ul li {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+/*media queries*/
+/*
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  
+}
+
+@media (max-width: 991px) {
+ 
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*/
+
+@media all and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: none;
+    justify-content: column;
+  }
+
+  .headerNav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+  }
+
+  .headerNavLink {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+    padding: auto;
+    justify-content: center;
+  }
+
+  .search h1 {
+    font-size: 50px;
+    padding: 30px;
+  }
+
+  .search p {
+    font-size: 30px;
+  }
+
+  .search form input {
+  }
+
+  .searchFilters div {
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /****************HOSTING********************/
+
+  .hosting h3 {
+    font-size: 50px;
+  }
+
+  .hosting p {
+    font-size: 40px;
+  }
+
+  .hosting ul {
+    font-size: 35px;
+  }
+
+  .hostingMain img,
+  .hostingPopular img {
+    margin: 5px;
+  }
+
+  .hostingPopular article {
+    width: 95%;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .hostingMainContainer {
+    flex-direction: column;
+  }
+
+  .hostingMain h2 {
+    font-size: 40px;
+  }
+
+  .hostingMain {
+    background-color: white;
+    width: 100%;
+  }
+
+  .hostingMain article {
+    width: 95%;
+    height: 500px;
+    margin: 20px;
+  }
+
+  .hostingMain figure {
+    height: 75%;
+  }
+
+  .hostingMainCard {
+    height: 70%;
+  }
+
+  .hostingMain img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hostingMainViewMore {
+    font-size: 40px;
+  }
+
+  .hostingPopular {
+    width: 100%;
+  }
+
+  .hostingPopular h2 {
+    font-size: 40px;
+  }
+
+  .hostingPopular article,
+  .hostingMain article {
+    width: 95%;
+    height: 400px;
+    margin: 20px;
+  }
+
+  .hostingPopular figure {
+    height: 100%;
+    width: 300px;
+  }
+
+  .hostingPopular img {
+    width: 100%;
+  }
+
+  .hostingPopularWrap {
+  }
+
+  /******************ACTIVITY*******************/
+
+  .activityTitle {
+    font-size: 50px;
+  }
+
+  .activityContainer {
+    width: 100%;
+  }
+
+  .activityCard {
+    width: 850px;
+    height: 400px;
+  }
+
+  .activityWrapimg {
+    width: 100%;
+  }
+
+  .activityCard img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .activity h3 {
+    font-size: 50px;
+  }
+
+  /*******************FOOTER**********************/
+
+  .footer {
+    width: 100vw;
+  }
 }
