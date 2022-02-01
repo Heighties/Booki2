@@ -159,7 +159,7 @@ h2 {
 }
 
 h3 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 h4 {
@@ -171,7 +171,7 @@ h5 {
 }
 
 p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 small,
@@ -188,11 +188,11 @@ small,
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 20px;
   }
 
   h3 {
-    font-size: 21px;
+    font-size: 16px;
   }
 
   h4 {
@@ -275,7 +275,7 @@ h3 {
   background-color: var(--blue);
   left: 0;
   right: 0;
-  height: 2px;
+  height: 3px;
   top: 0;
 }
 
@@ -283,15 +283,15 @@ h3 {
   color: var(--blue);
 }
 
+.active {
+  color: var(--blue);
+  border-top: 3px #0065fc solid;
+}
+
 .search h1 {
   font-weight: bold;
   font-size: 19px;
   padding-bottom: 10px;
-}
-
-.search p {
-  /*font-size: 15px;*/
-  padding-bottom: 20px;
 }
 
 section {
@@ -324,6 +324,7 @@ element.style {
 .search_form > * {
   line-height: 40px;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .search form input {
@@ -332,7 +333,7 @@ element.style {
   border-top: var(--gray) 1px solid;
   border-bottom: var(--gray) 1px solid;
   padding: 0 24px;
-  width: 224px;
+  width: 206px;
   /*font-size: 16px;*/
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
@@ -414,10 +415,10 @@ element.style {
 }
 
 .searchInfoWrapIcon {
-  height: 32px;
-  width: 32px;
-  min-height: 32px;
-  min-width: 32px;
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
   border: solid 1px #d9d9d9;
   border-radius: 100%;
   display: flex;
@@ -425,6 +426,10 @@ element.style {
   justify-content: center;
   margin-right: 16px;
   color: var(--blue);
+}
+
+.fa-info {
+  font-size: 10px;
 }
 
 /************************************************/
@@ -486,12 +491,11 @@ element.style {
 }
 
 .hostingMain p {
-  /* padding: 2px; */
+  margin: 2px 0px 0px 5px;
 }
 
 .hostingMainViewMore {
   font-weight: bold;
-  margin-top: 30px;
   /*font-size: 15px;*/
 }
 
@@ -532,7 +536,7 @@ article:hover {
 }
 
 .hostingMain img {
-  height: 100px;
+  height: 120px;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
@@ -560,6 +564,7 @@ article:hover {
   word-wrap: break-word;
   flex-wrap: wrap;
   max-width: 55%;
+  margin-left: 10px;
 }
 
 .hostingMain h3,
@@ -572,12 +577,16 @@ article:hover {
   /*font-size: 10px;*/
 }
 
+.hostingMain h3 {
+  margin: 5px 0px 0px 5px;
+}
+
 .hostingMain ul {
-  margin: 0px 0px 0px 0px;
+  margin: 1px 0px 0px 5px;
 }
 
 .hostingPopular ul {
-  margin: 0px 0px 0px 12px;
+  margin: 20px 0px 0px 0px;
 }
 
 .hostingPopularWrap p {
@@ -730,11 +739,12 @@ ul {
 
 .footerWrapper {
   display: flex;
-  justify-content: space-around;
   width: 992px;
   margin: auto;
   box-sizing: border-box;
   flex-wrap: wrap;
+  gap: 16%;
+  padding-top: 40px;
 }
 
 .footer ul {
@@ -800,6 +810,22 @@ ul {
     font-size: 16px;
   }
 
+  .headerNavLink:hover:before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    background-color: var(--blue);
+    left: 0;
+    right: 0;
+    height: 0px;
+    top: 0;
+  }
+
+  .active {
+    border-bottom: 3px #0065fc solid;
+    border-top: white;
+  }
+
   .search {
     display: flex;
     width: 100%;
@@ -816,6 +842,10 @@ ul {
     /* font-size: 30px; */
   }
 
+  .searchSubtitle {
+    padding-left: 30px;
+  }
+
   .searchFormButton {
     display: none;
   }
@@ -830,9 +860,6 @@ ul {
     /* padding-left: 16px;
     padding-right: 16px; */
     padding: 4px 16px 0px 16px;
-  }
-
-  .search form input {
   }
 
   .searchFilters {
@@ -870,7 +897,7 @@ ul {
 
   .hostingPopular article {
     /* width: 95%; */
-    height: 150px;
+    height: 140px;
     /* margin: 20px; */
   }
 
@@ -889,7 +916,7 @@ ul {
 
   .hostingMain article {
     /* width: 95%; */
-    height: 200px;
+    height: 170px;
     /* margin: 20px; */
   }
 
@@ -906,8 +933,12 @@ ul {
     height: 100%;
   }
 
+  .hostingMain ul {
+    margin-top: 8px;
+  }
+
   .hostingMainViewMore {
-    /* font-size: 40px; */
+    font-size: 16px;
   }
 
   .hostingPopular {
@@ -920,7 +951,7 @@ ul {
 
   .hostingPopular article,
   .hostingMain article {
-    width: 95%;
+    width: 100%;
   }
 
   .hostingPopular figure {
@@ -931,10 +962,20 @@ ul {
     width: 100%;
   }
 
+  .hostingPopularWrap {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .hostingPopular ul {
+    margin-top: 40px;
+  }
+
   /******************ACTIVITY*******************/
 
   .activityTitle {
     /* font-size: 50px; */
+    padding-left: 14px;
   }
 
   .activityContainer {
@@ -963,10 +1004,13 @@ ul {
 
   .footer {
     /* width: 100%; */
+    display: flex;
   }
 
   .footerWrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
   }
 }
