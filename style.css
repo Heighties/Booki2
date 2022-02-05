@@ -502,8 +502,14 @@ element.style {
 .hostingPopular {
   display: flex;
   flex-direction: column;
+  /* gap: 15px; */
+  /* justify-content: center; */
+}
+
+.hostingPopularContainer {
+  display: flex;
   gap: 15px;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .hostingPopular h2 {
@@ -765,24 +771,216 @@ ul {
 
   
 }
-
-@media (max-width: 991px) {
- 
-
-}
+*/
 
 @media (max-width: 768px) {
   html {
-   font-size: 50%;
+    font-size: 50%;
   }
 }
 
-*/
 @media all and (min-width: 1024px) {
   .wrapper {
     width: 992px;
   }
 }
+
+/**********************TABLETTE***************************/
+
+@media (max-width: 991px) {
+  .search {
+    display: flex;
+    width: 100%;
+    padding: auto;
+  }
+
+  .search h1 {
+    /* font-size: 50px; */
+    /* padding: 30px; */
+  }
+
+  .search p {
+    /* font-size: 30px; */
+  }
+
+  .searchSubtitle {
+    /* padding-left: 30px; */
+  }
+
+  .search_form {
+    width: 100%;
+  }
+
+  .searchFiltersTitle {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  /****************HOSTING********************/
+
+  .hosting {
+    gap: 10px;
+  }
+
+  .hosting h3 {
+    /* font-size: 50px; */
+  }
+
+  .hosting p {
+    /* font-size: 40px; */
+  }
+
+  .hosting ul {
+    /* font-size: 35px; */
+  }
+
+  .hostingMain,
+  .hostingPopular {
+    width: 100%;
+  }
+
+  .hostingMain img,
+  .hostingPopular img {
+    margin: 1px;
+  }
+
+  .hostingPopular article {
+    /* width: 95%; */
+    height: 140px;
+    /* margin: 20px; */
+  }
+
+  .hostingMainContainer {
+    /* flex-directiSon: column; */
+  }
+
+  .hostingMain h2 {
+    /* font-size: 40px; */
+  }
+
+  .hostingMain {
+    background-color: var(--gray);
+    /* width: 100%; */
+  }
+
+  .hostingMain article {
+    /* width: 95%; */
+    height: 170px;
+    /* margin: 20px; */
+  }
+
+  .hostingMain figure {
+    height: 100px;
+  }
+
+  .hostingMainCard {
+    /* height: 70%; */
+  }
+
+  .hostingMain img {
+    /* /* width: 100%;* */
+    height: 100%;
+  }
+
+  .hostingMain ul {
+    margin-top: 8px;
+  }
+
+  .hostingMainViewMore {
+    font-size: 16px;
+  }
+
+  .hostingPopular {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;
+  }
+
+  .hostingPopular h2 {
+    /* font-size: 40px; */
+  }
+
+  .hostingPopularContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .hostingPopular article,
+  .hostingMain article {
+    /* width: 100%; */
+  }
+
+  .hostingPopular figure {
+    width: 40%;
+  }
+
+  .hostingPopular img {
+    width: 100%;
+  }
+
+  .hostingPopularWrap {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .hostingPopular ul {
+    margin-top: 40px;
+  }
+
+  /******************ACTIVITY*******************/
+
+  .activityTitle {
+    /* font-size: 50px; */
+    /* padding-left: 14px; */
+  }
+
+  .activityContainer {
+    width: 100%;
+  }
+
+  .activityCard {
+    /* width: 350px;
+    height: 200px; */
+  }
+
+  .activityWrapimg {
+    /* width: 100%; */
+  }
+
+  .activityCard img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .activity h3 {
+    /* font-size: 50px; */
+  }
+
+  /*******************FOOTER**********************/
+
+  /*.footer {
+    width: 100%;
+    display: flex;
+  }
+
+  .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+  }*/
+}
+
+/********************SMART-PHONE************************/
 
 @media all and (max-width: 768px) {
   .header {
@@ -876,6 +1074,10 @@ ul {
     justify-content: center;
   }
 
+  .main {
+    padding: 20px;
+  }
+
   /****************HOSTING********************/
 
   .hosting h3 {
@@ -942,7 +1144,16 @@ ul {
   }
 
   .hostingPopular {
-    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    /* justify-content: center; */
+  }
+
+  .hostingPopularContainer {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
   }
 
   .hostingPopular h2 {
@@ -975,7 +1186,7 @@ ul {
 
   .activityTitle {
     /* font-size: 50px; */
-    padding-left: 14px;
+    /* padding-left: 14px; */
   }
 
   .activityContainer {
@@ -998,6 +1209,10 @@ ul {
 
   .activity h3 {
     /* font-size: 50px; */
+  }
+
+  .activityContainerCard23 {
+    display: none;
   }
 
   /*******************FOOTER**********************/
