@@ -293,10 +293,10 @@ h3 {
   color: var(--blue);
 }
 
-.active {
+/* .active {
   color: var(--blue);
   border-top: 3px #0065fc solid;
-}
+} */
 
 .search h1 {
   font-weight: bold;
@@ -607,7 +607,11 @@ ul {
   color: darkgray;
 }
 
-.fas[star-color="true"] {
+/* .fas[star-color="true"] {
+  color: var(--blue);
+} */
+
+.blueStar {
   color: var(--blue);
 }
 

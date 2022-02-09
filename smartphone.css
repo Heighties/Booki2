@@ -3,8 +3,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: none;
-    justify-content: column;
   }
 
   .headerNav {
@@ -44,7 +42,6 @@
   .search {
     display: flex;
     width: 100%;
-    padding: auto;
     justify-content: center;
   }
 
@@ -181,6 +178,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 0px;
   }
 
   .activityContainerCard {
