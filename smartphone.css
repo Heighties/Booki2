@@ -34,28 +34,34 @@
     top: 0;
   }
 
-  .active {
+  .activated {
+    color: var(--blue);
     border-bottom: 3px #0065fc solid;
     border-top: white;
+  }
+
+  .searchWrap {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .search {
     display: flex;
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
-  .search h1 {
+  /* .search h1 {
     padding: 30px;
   }
 
   .searchSubtitle {
     padding-left: 30px;
-  }
+  } */
 
-  .search_form {
+  /* .search_form {
     padding-left: 15px;
-  }
+  } */
 
   .searchFormWrapIcon {
     line-height: 46px;
@@ -79,9 +85,9 @@
     padding: 4px 16px 0px 16px;
   }
 
-  .searchFilters {
+  /* .searchFilters {
     padding-left: 10px;
-  }
+  } */
 
   .searchFiltersTitle {
     width: 100%;
@@ -94,7 +100,7 @@
   section {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .main {
@@ -105,6 +111,7 @@
 
   .hostingMainContainer {
     justify-content: normal;
+    width: 100%;
   }
 
   .hostingMain {
@@ -117,6 +124,10 @@
 
   .hostingMain img {
     height: 100%;
+  }
+
+  .hostingMainWrap {
+    margin-left: 10px;
   }
 
   .hostingMain ul {
@@ -136,6 +147,8 @@
     display: flex;
     gap: 15px;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
   .hostingPopular article,
@@ -210,5 +223,6 @@
     flex-direction: column;
     gap: 20px;
     width: 90%;
+    padding-bottom: 5%;
   }
 }

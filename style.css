@@ -179,7 +179,7 @@ small,
   font-size: 13px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   .wrapper {
     width: 992px;
   }
@@ -278,7 +278,7 @@ h3 {
   padding: 40px;
 }
 
-.headerNavLink:hover:before {
+/* .disbled:hover:before {
   z-index: 2;
   position: absolute;
   content: "";
@@ -287,16 +287,17 @@ h3 {
   right: 0;
   height: 3px;
   top: 0;
-}
+} */
 
-.headerNavLink:hover {
-  color: var(--blue);
-}
-
-/* .active {
+.disabled:hover {
   color: var(--blue);
   border-top: 3px #0065fc solid;
-} */
+}
+
+.activated {
+  color: var(--blue);
+  border-top: 3px #0065fc solid;
+}
 
 .search h1 {
   font-weight: bold;

@@ -20,8 +20,8 @@
           alt="Logo Booki"
         />
         <nav class="headerNav">
-          <a class="headerNavLink active" href="#hosting">Hébergements</a>
-          <a class="headerNavLink" href="#activity">Activités</a>
+          <a class="headerNavLink activated" href="#hosting">Hébergements</a>
+          <a class="headerNavLink disabled" href="#activity">Activités</a>
         </nav>
       </header>
       <!--*********************HEADER END***********************-->
@@ -29,45 +29,51 @@
       <main class="main">
         <!--*********************SEARCH START***********************-->
         <section class="search">
-          <header>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="searchSubtitle">
-              En plein centre-ville ou en pleine nature
-            </p>
-          </header>
-          <form class="search_form">
-            <span class="searchFormWrapIcon">
-              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            </span>
-            <input type="search" placeholder="Marseille, France" />
-            <button class="searchFormButton">Rechercher</button>
-            <div class="buttonSearchIcon">
-              <i class="fas fa-search" aria-hidden="true"></i>
+          <div class="searchWrap">
+            <header>
+              <div class="headerTitle">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="searchSubtitle">
+                  En plein centre-ville ou en pleine nature
+                </p>
+              </div>
+            </header>
+            <div class="searchFormWrap">
+              <form class="search_form">
+                <span class="searchFormWrapIcon">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </span>
+                <input type="search" placeholder="Marseille, France" />
+                <button class="searchFormButton">Rechercher</button>
+                <div class="buttonSearchIcon">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </div>
+              </form>
             </div>
-          </form>
-          <div class="searchFilters">
-            <h2 class="searchFiltersTitle">Filtres</h2>
-            <div class="blockFilter">
-              <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
-              Économique
+            <div class="searchFilters">
+              <h2 class="searchFiltersTitle">Filtres</h2>
+              <div class="blockFilter">
+                <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                Économique
+              </div>
+              <div class="blockFilter">
+                <i class="fas fa-child" aria-hidden="true"></i> Familial
+              </div>
+              <div class="blockFilter">
+                <i class="fas fa-heart" aria-hidden="true"></i> Romantique
+              </div>
+              <div class="blockFilter">
+                <i class="fas fa-dog" aria-hidden="true"></i> Animaux autorisés
+              </div>
             </div>
-            <div class="blockFilter">
-              <i class="fas fa-child" aria-hidden="true"></i> Familial
+            <div class="searchInfo">
+              <div class="searchInfoWrapIcon">
+                <i class="fas fa-info" aria-hidden="true"></i>
+              </div>
+              <p class="searchInfoText">
+                Plus de 500 logements sont disponibles dans cette ville
+              </p>
             </div>
-            <div class="blockFilter">
-              <i class="fas fa-heart" aria-hidden="true"></i> Romantique
-            </div>
-            <div class="blockFilter">
-              <i class="fas fa-dog" aria-hidden="true"></i> Animaux autorisés
-            </div>
-          </div>
-          <div class="searchInfo">
-            <div class="searchInfoWrapIcon">
-              <i class="fas fa-info" aria-hidden="true"></i>
-            </div>
-            <p class="searchInfoText">
-              Plus de 500 logements sont disponibles dans cette ville
-            </p>
           </div>
         </section>
         <!--*********************SEARCH END***********************-->
@@ -86,25 +92,27 @@
                       alt="Chambre avec un lit superposé et une fenêtre donnant vue sur la  ville."
                     />
                   </figure>
-                  <h3>Auberge la Cannebière</h3>
-                  <p>Nuit à partir de <b>25€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"> </i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"> </i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <article>
@@ -115,25 +123,27 @@
                       alt="Chambre grise avec deux lits simples et une fenêtre."
                     />
                   </figure>
-                  <h3>Hôtel du port</h3>
-                  <p>Nuit à partir de <b>52€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <b>52€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <article>
@@ -144,25 +154,27 @@
                       alt="Chambre avec lit double, armoire et fenêtre."
                     />
                   </figure>
-                  <h3>Hôtel Les mouettes</h3>
-                  <p>Nuit à partir de <b>76€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Hôtel Les mouettes</h3>
+                    <p>Nuit à partir de <b>76€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <article>
@@ -173,25 +185,27 @@
                       alt="Chambre avec lit double sur les tons de mer."
                     />
                   </figure>
-                  <h3>Hôtel de la mer</h3>
-                  <p>Nuit à partir de <b>46€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Hôtel de la mer</h3>
+                    <p>Nuit à partir de <b>46€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <article>
@@ -202,25 +216,27 @@
                       alt="Chambre avec lits simples superposés."
                     />
                   </figure>
-                  <h3>Auberge Le Panier</h3>
-                  <p>Nuit à partir de <b>23€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Auberge Le Panier</h3>
+                    <p>Nuit à partir de <b>23€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <article>
@@ -231,25 +247,27 @@
                       alt="Chambre éclairée avec lit double et grande fenêtre."
                     />
                   </figure>
-                  <h3>Hôtel chez Amina</h3>
-                  <p>Nuit à partir de <b>96€</b></p>
-                  <ul>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star blueStar" aria-hidden="true"></i>
-                    </li>
-                  </ul>
+                  <div class="hostingMainWrap">
+                    <h3>Hôtel chez Amina</h3>
+                    <p>Nuit à partir de <b>96€</b></p>
+                    <ul>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fas fa-star blueStar" aria-hidden="true"></i>
+                      </li>
+                    </ul>
+                  </div>
                 </a>
               </article>
               <a href="#" class="hostingMainViewMore">Afficher plus</a>
