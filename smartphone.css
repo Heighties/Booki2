@@ -41,6 +41,12 @@
     border-top: white;
   }
 
+  .disabled:hover {
+    color: var(--blue);
+    border-bottom: 3px #0065fc solid;
+    border-top: white;
+  }
+
   .searchWrap {
     margin-left: 12px;
     margin-right: 12px;
