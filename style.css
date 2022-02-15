@@ -183,6 +183,10 @@ small,
   .wrapper {
     width: 992px;
   }
+
+  .headerNavLink {
+    padding: 40px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -275,7 +279,6 @@ h3 {
 
 .headerNavLink {
   position: relative;
-  padding: 40px;
 }
 
 /* .disbled:hover:before {
