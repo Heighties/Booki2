@@ -110,6 +110,11 @@
 
   /****************HOSTING********************/
 
+  .hostingMain,
+  .hostingPopular {
+    padding: 20px;
+  }
+
   .hostingMainContainer {
     justify-content: normal;
     width: 100%;
