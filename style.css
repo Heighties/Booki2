@@ -330,6 +330,11 @@ element.style {
   width: 190px;
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
+  margin-right: -14px;
+}
+
+.search_input::placeholder {
+  color: black;
 }
 
 .search_filters {
