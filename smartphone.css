@@ -35,6 +35,8 @@
     font-size: 9px;
   }
 
+  /***********************HEADER************************/
+
   .header {
     display: flex;
     justify-content: center;
@@ -42,7 +44,6 @@
   }
 
   .header_nav {
-    position: sticky;
     top: 0;
     display: flex;
     width: 100%;
@@ -84,6 +85,8 @@
     border-top: white;
   }
 
+  /***********************SEARCH************************/
+
   .search_wrap {
     margin-left: 12px;
     margin-right: 12px;
@@ -112,6 +115,8 @@
   .block_filter {
     font-size: 12px;
   }
+
+  /***********************MAIN************************/
 
   section {
     width: 100%;

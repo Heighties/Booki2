@@ -225,6 +225,8 @@ h3 {
   margin: auto;
 }
 
+/***********************HEADER************************/
+
 .header {
   display: flex;
   align-items: center;
@@ -242,17 +244,6 @@ h3 {
   position: relative;
 }
 
-/* .disbled:hover:before {
-  z-index: 2;
-  position: absolute;
-  content: "";
-  background-color: var(--blue);
-  left: 0;
-  right: 0;
-  height: 3px;
-  top: 0;
-} */
-
 .disabled:hover {
   color: var(--blue);
   border-top: 3px #0065fc solid;
@@ -263,22 +254,12 @@ h3 {
   border-top: 3px #0065fc solid;
 }
 
-.search h1 {
-  font-weight: bold;
-  font-size: 19px;
-  padding-bottom: 10px;
-}
-
 section {
   display: block;
   flex-wrap: wrap;
 }
 
-.search {
-  padding-top: 30px;
-}
-
-/************************/
+/***********************MAIN************************/
 
 element.style {
   display: flex;
@@ -289,7 +270,17 @@ element.style {
   max-width: 100%;
 }
 
-/**********************/
+/***********************SEARCH************************/
+
+.search {
+  padding-top: 30px;
+}
+
+.search h1 {
+  font-weight: bold;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
 
 .research_wrapper > * {
   border: none;
@@ -416,8 +407,7 @@ element.style {
   font-size: 10px;
 }
 
-/************************************************/
-/************************************************/
+/**********************HOSTING**************************/
 
 .hosting {
   display: flex;
@@ -466,6 +456,10 @@ element.style {
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.hosting_main_wrap {
+  margin-left: 5px;
 }
 
 .hosting_main p {
@@ -593,7 +587,7 @@ ul {
   height: 100%;
 }
 
-/*********************************ACTIVITY*************************************/
+/***************************ACTIVITY******************************/
 
 .activity {
   display: flex;
