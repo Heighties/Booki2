@@ -178,6 +178,10 @@ small,
   font-size: 13px;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media all and (min-width: 992px) {
   .wrapper {
     width: 992px;
