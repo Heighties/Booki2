@@ -181,6 +181,7 @@ small,
 @media all and (min-width: 992px) {
   .wrapper {
     width: 992px;
+    margin: auto;
   }
 
   .header_nav_link {
@@ -219,10 +220,6 @@ a {
 
 h3 {
   font-weight: bold;
-}
-
-.wrapper {
-  margin: auto;
 }
 
 /***********************HEADER************************/
